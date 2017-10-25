@@ -65,7 +65,12 @@ INDEX
 CONSTRUCTION/FURNITURE
 ********************************************/
 
-/*This area will feature carousel code
+/*This area will feature carousel code*/
+
+.nav li {
+	display: inline;
+	padding: 0 2.5%;
+}
 
 /*******************************************
 CONTACT
