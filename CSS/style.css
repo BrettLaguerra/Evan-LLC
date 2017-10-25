@@ -1,0 +1,110 @@
+/*******************************************
+UNIVERSAL
+********************************************/
+
+.main-header {
+	background-color: green;
+}
+
+.footer {
+	float: left;
+	padding: .5em 0;
+	background: #d9e4ea;
+  height: 8vh;
+  margin-top: auto;
+}
+
+.footer p {
+  float: right;
+  padding-right: 3%;
+}
+
+.footer img {
+  height: 100%;
+  padding-left: 2%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1{
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+/*******************************************
+INDEX
+********************************************/
+
+.index-background{
+  background-image: url("../img/treetops.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.index-nav li {
+  display: inline-block;
+  padding: 10% 0 0 11.5%;
+}
+
+.index-nav img {
+  max-height: 50vh;
+  max-width: 50vw;
+}
+
+/*******************************************
+CONSTRUCTION/FURNITURE
+********************************************/
+
+/*This area will feature carousel code
+
+/*******************************************
+CONTACT
+********************************************/
+
+.contact-form{
+  margin: 50% 7% 0 7%;
+}
+
+.contact-form-label {
+  margin-left: 37.5%;
+}
+
+.contact-form-label-long{
+  margin-left: 22%;
+}
+
+.contact-input {
+  margin-left: 7.5%
+}
+
+button {
+  margin: 3% 0 0 35%;
+}
+
+/*******************************************
+MEDIA QUERIES
+********************************************/
+/*
+@media (min-width: 769px) {
+  .main-nav,
+  .main-header{
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-header{
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+*/
