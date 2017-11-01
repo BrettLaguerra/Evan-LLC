@@ -4,11 +4,19 @@
     <link rel="stylesheet" href="CSS/style.css"></link>
     <link rel="stylesheet" type="text/css" href="slick-1.8.0/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick-1.8.0/slick/slick-theme.css"/>
+    <script type="text/javascript">//disable browser arrow keys
+      window.addEventListener("keydown", function(e) {
+        // space and arrow keys
+        if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+          e.preventDefault();
+        }
+      }, false);
+    </script>
   </head>
   <body>
 
     <header class="main-header">
-			<h1>Evan Cratz LLC.</h1>
+			<h1>Cratz Construction LLC.</h1>
       <nav class="nav">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -36,7 +44,12 @@
   <script type="text/javascript">
     $(document).ready(function(){
       $('.carousel').slick({
-
+        //Fade and Dots features
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
       });
     });
   </script>

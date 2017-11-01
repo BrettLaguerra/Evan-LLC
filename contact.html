@@ -2,11 +2,19 @@
 <html>
   <head>
     <link rel="stylesheet" href="CSS/style.css"></link>
+    <script type="text/javascript">//disable browser arrow keys
+      window.addEventListener("keydown", function(e) {
+        // space and arrow keys
+        if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+          e.preventDefault();
+        }
+      }, false);
+    </script>
   </head>
-  <body>
+  <body id="contact">
 
     <header class="main-header">
-			<h1>Evan Cratz LLC.</h1>
+			<h1>Cratz Construction LLC.</h1>
       <nav class="nav">
         <ul>
           <li><a href="index.html">Home</a></li>

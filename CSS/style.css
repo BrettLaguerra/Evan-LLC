@@ -2,6 +2,13 @@
 UNIVERSAL
 ********************************************/
 
+/*Use this to hide scrollbars on webpages*/
+::-webkit-scrollbar {
+    width: 0px;
+		height: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
 .main-header {
 	background-color: green;
 }
@@ -66,7 +73,11 @@ CONSTRUCTION/FURNITURE
 ********************************************/
 
 .carousel {
-	
+	margin: 40% 5% 0 5%;
+}
+
+.nav {
+
 }
 
 .nav li {
@@ -80,6 +91,7 @@ CONTACT
 
 .contact-form{
   margin: 50% 7% 0 7%;
+	border: none;
 }
 
 .contact-form-label {
@@ -96,6 +108,14 @@ CONTACT
 
 button {
   margin: 3% 0 0 35%;
+}
+
+#contact {
+	background-color: black;
+}
+
+.contact-form label{
+	color: white;
 }
 
 /*******************************************
