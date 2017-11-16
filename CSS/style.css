@@ -73,16 +73,18 @@ CONSTRUCTION/FURNITURE
 ********************************************/
 
 .carousel {
-	margin: 40% 5% 0 5%;
-}
-
-.nav {
-
+  margin-top: 40%;
+  margin-left: 2%;
+  width: 258px;
 }
 
 .nav li {
 	display: inline;
 	padding: 0 2.5%;
+}
+
+.carousel-background {
+  background-color: purple;
 }
 
 /*******************************************
@@ -122,35 +124,51 @@ button {
 MEDIA QUERIES
 ********************************************/
 /*
-
 Add Bootstrap for form page:
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
-Height Breaks:
-    730px
-
-Width Breaks:
-  348px for form
-  308px for carousel
-  327 for home
-  618 for home page
-  1069 for home page
-
-@media (min-width: 769px) {
-
-}
-
-@media (min-width: 1025px) {
-
-}
 */
 
+@media (min-width: 305px){
+  .nav {
+    text-align: center;
+  }
+  .carousel {
+    margin: 0;
+    margin: 40% 0 0 10%;
+  }
+}
+
 @media (min-width: 327px) {
-  body {
+  .index-body {
     height: auto;
+  }
+}
+
+@media (min-width: 347px) {
+  .carousel {
+    margin-left: 15%;
+    margin-top: 30%;
+  }
+
+  .contact-form{
+    margin: 40% 30% 0 7%;
+  	border: none;
+    padding-left: 10%;
+  }
+}
+
+@media (min-width: 500px) {
+  .carousel {
+    margin-left: 30%;
+  }
+
+  .contact-form{
+    margin: 30% 30% 0 7%;
+  	border: none;
+    padding-left: 20%;
   }
 }
 
@@ -159,11 +177,43 @@ Width Breaks:
     height: 100vh;
   }
 
+  h1 {
+    float: left;
+    padding-left: 5px;
+  }
 
+  .nav {
+    float: right;
+  }
+
+  .contact-form{
+    margin: 20% 30% 0 7%;
+  	border: none;
+    padding-left: 25%;
+  }
+}
+
+@media (min-width: 750px) {
+  .carousel {
+    margin-top: 20%;
+  }
+
+  .contact-form {
+    margin-left: 10%;
+  }
 }
 
 @media (min-width: 1069px) {
-  .index-background {
-    padding: 10% 0 0 0;
+  .index-body {
+    height: 100vh;
+  }
+
+  .carousel {
+    margin-top: 15%;
+    margin-left: 40%;
+  }
+
+  .contact-form-label {
+    padding-left: 5%;
   }
 }
